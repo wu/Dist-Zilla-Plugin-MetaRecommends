@@ -1,5 +1,8 @@
 Revision history for Dist-Zilla-Plugin-MetaRecommends
 
-0.0.1  Mon Oct 19 2009
-       Initial release.
+0.02  Thu Oct 22, 2009 10:14 pm
+      Minor tweaks to improve Kwalitee
+
+0.01  Mon Oct 19 2009
+      Initial release.
 

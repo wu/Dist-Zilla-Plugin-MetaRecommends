@@ -1,7 +1,8 @@
 package Dist::Zilla::Plugin::MetaRecommends;
+use warnings;
 use Moose;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 # ABSTRACT: provide "recommends" section for distribution metadata for optional prereqs
 with 'Dist::Zilla::Role::MetaProvider';
@@ -44,18 +45,30 @@ __END__
 
 Dist::Zilla::Plugin::MetaRecommends - provide optional prereqs in meta file
 
+=head1 SYNOPSIS
+
+    [MetaRecommends]
+    module = version
+    other::module = version
+
+
 =head1 DESCRIPTION
 
 This plugin adds a 'recommends' section to the distribution's metadata
 to define any optional prereqs.
 
-  [MetaRecommends]
-  module = version
-  other::module = version
-
 This module is just a copy of the MetaResources plugin version
 1.092680 with a few minor tweaks.
 
+=head1 SUBROUTINES/METHODS
+
+=over 8
+
+=item metadata()
+
+required method for Dist::Zilla.
+
+=back
 
 =head1 AUTHOR
 
