@@ -2,7 +2,7 @@ package Dist::Zilla::Plugin::MetaRecommends;
 use warnings;
 use Moose;
 
-our $VERSION = '0.02';
+our $VERSION;
 
 # ABSTRACT: provide "recommends" section for distribution metadata for optional prereqs
 with 'Dist::Zilla::Role::MetaProvider';

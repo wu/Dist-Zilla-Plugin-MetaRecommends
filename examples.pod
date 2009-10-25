@@ -1,0 +1,22 @@
+=pod
+
+=head1 NAME
+
+Dist::Zilla::Plugin::MetaRecommends - example
+
+=head1 EXAMPLE
+
+The following example shows how to make POE into an option prereq:
+
+    [MetaRecommends]
+    POE = 0
+
+Note that when doing this, make sure to omit POE from the list of
+required prereqs.  If you use the AutoPrereq, plugin, you can skip POE
+like so:
+
+    [AutoPrereq]
+    skip = ^POE$
+
+
+=cut
